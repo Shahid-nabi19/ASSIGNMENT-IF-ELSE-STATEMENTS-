@@ -1,0 +1,15 @@
+sp = int(input("Enter the selling price: "))
+cp = int(input("Enter the cost price: "))
+profit = sp - cp
+loss = cp - sp
+
+if profit > 0:
+    print("Increased profit of", profit)
+    profit_per = (profit / cp) * 100
+    print("Percent profit =", profit_per, "%")
+elif profit < 0:
+    print("Increased loss of", loss)
+    loss_per = (loss / cp) * 100
+    print("Percent loss =", loss_per, "%")
+else:
+    print("No profit and no loss")
