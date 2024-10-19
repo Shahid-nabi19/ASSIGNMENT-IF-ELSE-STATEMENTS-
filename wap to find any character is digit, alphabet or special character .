@@ -1,0 +1,7 @@
+char=input("enter any character")
+if char. isdigit( ):
+	print("digit")
+elif char. isalpha( ):
+	print ("alphabet")
+else:
+	print("special character")
