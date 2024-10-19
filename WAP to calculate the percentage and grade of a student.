@@ -1,0 +1,24 @@
+math = int(input("Enter marks in math: "))
+physics = int(input("Enter marks in physics: "))
+chemistry = int(input("Enter marks in chemistry: "))
+biology = int(input("Enter marks in biology: "))
+computer_science = int(input("Enter marks in computer science: "))
+
+marks_obtained = math + physics + chemistry + biology + computer_science
+percentage = (marks_obtained / 500) * 100
+
+if percentage >= 90:
+    grade = "A"
+elif percentage >= 80:
+    grade = "B"
+elif percentage >= 70:
+    grade = "C"
+elif percentage >= 60:
+    grade = "D"
+elif percentage >= 40:
+    grade = "E"
+else:
+    grade = "Fail"
+
+print("Grade obtained by student:", grade)
+print("Percentage:", percentage)
